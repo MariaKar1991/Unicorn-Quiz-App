@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(237, 237, 255);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

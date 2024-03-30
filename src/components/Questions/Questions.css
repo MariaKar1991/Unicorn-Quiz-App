@@ -1,0 +1,128 @@
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.question-text {
+  height: 100px;
+  margin-bottom: -10px;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin-top: 25px;
+}
+
+.answer-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.answer-button {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(215, 207, 207);
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgba(152, 143, 143, 0.5);
+  text-align: center;
+  margin-top: 35px;
+}
+
+.answer-button:hover {
+  background-color: rgb(166, 163, 163);
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.correct:hover {
+  background-color: green;
+}
+
+.incorrect {
+  background-color: red;
+  color: white;
+}
+
+.incorrect:hover {
+  background-color: red;
+}
+
+.check {
+  position: absolute;
+  top: 7px;
+  margin-top: -2px;
+  right: 5px;
+  color: white;
+}
+
+.check,
+.wrong-answer-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.wrong-answer-animation {
+  animation: sideToSide 0.5s ease infinite;
+  margin-left: 10px;
+}
+
+@keyframes sideToSide {
+  0% {
+    transform: translateX(-7px);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+  100% {
+    transform: translateX(-7px);
+  }
+}
+
+.answer-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.answer-message {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .answer-button {
+    width: 90px;
+    height: 110px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .answer-message {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+}
