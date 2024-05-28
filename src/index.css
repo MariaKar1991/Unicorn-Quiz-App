@@ -4,7 +4,7 @@
 
 body {
   background-color: #fdfdfc;
-  cursor: url("public/images/unicorn-cursor.png"), auto;
+  cursor: url("/images/unicorn-cursor.png"), auto;
 }
 
 @media screen and (max-width: 300px) {

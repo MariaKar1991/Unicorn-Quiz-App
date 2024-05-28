@@ -26,7 +26,7 @@ export default function Score() {
         </button>
         <FaStar className="star-2" color="gold" size={35} />
         <img
-          src="public/images/Unicorn2-dance.jpg"
+          src="/images/Unicorn2-dance.jpg"
           className="unicorns-dancing"
           alt="dancing unicorns image"
           loading="lazy"
