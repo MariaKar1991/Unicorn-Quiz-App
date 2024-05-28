@@ -7,6 +7,10 @@ body {
   cursor: url("/images/unicorn-cursor.png"), auto;
 }
 
+html .dark {
+  cursor: url("/images/unicorn-cursor-green.png"), auto;
+}
+
 @media screen and (max-width: 300px) {
   .question-text {
     margin-top: 310px;
