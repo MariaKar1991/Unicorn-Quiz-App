@@ -4,6 +4,7 @@
 
 body {
   background-color: #fdfdfc;
+  cursor: url("public/images/unicorn-cursor.png"), auto;
 }
 
 @media screen and (max-width: 300px) {
@@ -22,7 +23,7 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -39,11 +40,19 @@ body {
   color: #ffffff;
 }
 
-  .restart-question {
-    color: #ffffff;
-  }
+.dark .restart-question {
+  color: #ffffff;
+}
 
-  .restart-button:hover {
-    background-color: rgb(75, 44, 144);
-  }
+.restart-button:hover {
+  background-color: rgb(75, 44, 144);
+}
 
+/* Dark mode specific styles for unicorn-pc */
+.dark .unicorn-pc {
+  filter: brightness(1) invert(1);
+}
+
+.dark .unicorns-dancing {
+  filter: brightness(1) invert(1);
+}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
 .questions-container {
   display: flex;
   flex-direction: column;
@@ -9,10 +11,12 @@
 }
 
 .question-text {
-  height: 100px;
   font-size: 30px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+  height: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .answers-container {
@@ -47,6 +51,7 @@
   font-family: "Poppins", sans-serif;
   margin-left: 15px;
   margin-right: 15px;
+  transition: transform 0.3s ease;
 }
 
 .answer-button:hover {
@@ -56,6 +61,7 @@
 .correct {
   background-color: green;
   color: white;
+  animation: flash 0.8s ease infinite;
 }
 
 .correct:hover {
@@ -86,23 +92,6 @@
   right: 5px;
 }
 
-.wrong-answer-animation {
-  animation: sideToSide 0.5s ease infinite;
-  margin-left: 10px;
-}
-
-@keyframes sideToSide {
-  0% {
-    transform: translateX(-7px);
-  }
-  50% {
-    transform: translateX(-15px);
-  }
-  100% {
-    transform: translateX(-7px);
-  }
-}
-
 .answer-wrapper {
   position: relative;
   display: flex;
@@ -118,6 +107,17 @@
   font-size: 14px;
   white-space: nowrap;
 }
+
+@keyframes flash {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .answer-button {

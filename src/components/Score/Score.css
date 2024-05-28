@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
 .container-score {
   display: flex;
   flex-direction: column;
@@ -33,11 +35,12 @@
 
 .correct-count {
   color: green;
+  padding-left: 40px;
 }
 
 .score {
   text-align: center;
-  font-size: 65px;
+  font-size: 60px;
 }
 
 .star-2 {
@@ -80,10 +83,27 @@
   .score {
     font-size: 40px;
   }
+
+  .correct-count {
+    color: green;
+    margin-left: -35px;
+  }
 }
 
 @media screen and (max-width: 300px) {
   .restart-question {
     font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 345px) {
+  .restart-question {
+    font-size: 16px;
+  }
+
+  .correct-count {
+    color: green;
+    padding-left: 34px;
   }
 }

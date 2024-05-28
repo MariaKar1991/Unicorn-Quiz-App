@@ -25,7 +25,12 @@ export default function Score() {
           Restart Quiz
         </button>
         <FaStar className="star-2" color="gold" size={35} />
-        <img src="./Unicorn2-dance.jpg" className="unicorns-dancing" />
+        <img
+          src="public/images/Unicorn2-dance.jpg"
+          className="unicorns-dancing"
+          alt="dancing unicorns image"
+          loading="lazy"
+        />
         <FaStar className="star-2 bottom" color="gold" size={35} />
       </div>
     </div>
