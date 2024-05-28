@@ -2,7 +2,7 @@
 
 This application is designed to provide an interactive quiz experience where users can test their knowledge on React-related topics. It's built using React, making it fast, efficient, and highly customizable.
 
-It was created as part of the In-tech-gration Workshop: https://www.linkedin.com/feed/update/urn:li:activity:7168703137124343808/
+Link to Vercel: https://unicorn-quiz-app.vercel.app/
 
 # Features
 - Multiple Choice Questions: Users can answer multiple-choice questions presented in the quiz.
