@@ -23,4 +23,5 @@ Link to Vercel: https://unicorn-quiz-app.vercel.app/
 - The app provides immediate feedback on whether the selected answer is correct or incorrect.
 - After completing all questions, users can view their final score.
 
+
 🚀 Happy coding! 🚀
